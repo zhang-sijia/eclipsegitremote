@@ -1,7 +1,7 @@
 package practice;
 import java.sql.*;
 public class MysqlJdbc {
-	//你好吗
+	//你好吗 世界
 	  public static void main(String args[]) {
 	    try {
 	      Class.forName("com.mysql.cj.jdbc.Driver");     //加载MYSQL JDBC驱动程序   
