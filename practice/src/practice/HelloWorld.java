@@ -6,6 +6,7 @@ public class HelloWorld {
 		//hello world
 		//123
 		//sdfgfhg
+		//haolhaol∫√¡À
 		System.out.print("hello ,world");
 	}
 }
