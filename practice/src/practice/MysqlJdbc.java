@@ -1,9 +1,10 @@
 package practice;
 import java.sql.*;
 public class MysqlJdbc {
+	//ä½ å¥½
 	  public static void main(String args[]) {
 	    try {
-	      Class.forName("com.mysql.cj.jdbc.Driver");     //¼ÓÔØMYSQL JDBCÇı¶¯³ÌĞò   
+	      Class.forName("com.mysql.cj.jdbc.Driver");     //åŠ è½½MYSQL JDBCé©±åŠ¨ç¨‹åº   
 	      //Class.forName("org.gjt.mm.mysql.Driver");
 	     System.out.println("Success loading Mysql Driver!");
 	    }
@@ -13,10 +14,10 @@ public class MysqlJdbc {
 	    }
 	    try {
 	      Connection connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/t1?serverTimezone=UTC","root","123456");
-	      //Á¬½ÓURLÎª   jdbc:mysql//·şÎñÆ÷µØÖ·/Êı¾İ¿âÃû  £¬ºóÃæµÄ2¸ö²ÎÊı·Ö±ğÊÇµÇÂ½ÓÃ»§ÃûºÍÃÜÂë
+	      //è¿æ¥URLä¸º   jdbc:mysql//æœåŠ¡å™¨åœ°å€/æ•°æ®åº“å  ï¼Œåé¢çš„2ä¸ªå‚æ•°åˆ†åˆ«æ˜¯ç™»é™†ç”¨æˆ·åå’Œå¯†ç 
 	      System.out.println("Success connect Mysql server!");
 	      Statement stmt = connect.createStatement();
-	      ResultSet rs = stmt.executeQuery("select * from course");//course ÎªÄã±íµÄÃû³Æ
+	      ResultSet rs = stmt.executeQuery("select * from course");//course ä¸ºä½ è¡¨çš„åç§°
           while (rs.next()) {
 		        System.out.println(rs.getString("Cname"));
 		      }
